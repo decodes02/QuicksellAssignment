@@ -1,0 +1,210 @@
+/* General Dropdown Container Styling */
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+}
+
+.dropdown-button {
+  background-color: white;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /* Adjusts content distribution */
+  width: 120px;
+  /* Define a width for consistent alignment */
+}
+
+.dropdown-button .icon {
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+/* Dropdown Content Styling */
+.dropdown-content {
+  display: none;
+  /* Hide the dropdown initially */
+  position: absolute;
+  background-color: white;
+  min-width: 220px;
+  /* Ensure the dropdown is wider than the button */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  z-index: 1;
+  top: 100%;
+  /* Position it directly below the button */
+  left: 0;
+  /* Align to the left of the button */
+  margin-top: 8px;
+  /* Add some space between the button and dropdown */
+}
+
+/* Show the dropdown on button click */
+.dropdown-container:hover .dropdown-content,
+.dropdown-container:focus-within .dropdown-content {
+  display: block;
+  /* Show the dropdown on hover or focus */
+}
+
+/* Dropdown Sections Styling */
+.dropdown-section {
+  margin-bottom: 15px;
+}
+
+.dropdown-section:last-child {
+  margin-bottom: 0;
+}
+
+.dropdown-section label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #374151;
+}
+
+.dropdown-section select {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  color: #374151;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: white;
+}
+
+.dropdown-section select:focus {
+  outline: none;
+  border-color: #4f46e5;
+}
+
+/* Dropdown Hover & Focus Effects */
+.dropdown-button:hover {
+  border-color: #4f46e5;
+}
+
+.dropdown-content select:hover,
+.dropdown-content select:focus {
+  border-color: #4f46e5;
+}
+
+/* Kanban Board */
+.kanban-board {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  gap: 20px;
+  overflow-x: scroll;
+}
+
+.kanban-column {
+  /* width: 30%; */
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.ticket-card {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+  max-width: 400px;
+  height: 140px;
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ticket-id {
+  font-weight: bold;
+}
+
+/* User avatar circle */
+.user-avatar {
+  width: 30px;
+  height: 30px;
+  background-color: #e5e7eb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #111827;
+  margin-right: 10px;
+}
+
+.ticket-footer {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.priority-indicator {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Priority levels */
+.priority-4 {
+  background-color: red;
+}
+
+.priority-3 {
+  background-color: orange;
+}
+
+.priority-2 {
+  background-color: yellow;
+}
+
+.priority-1 {
+  background-color: green;
+}
+
+.priority-0 {
+  background-color: gray;
+}
+
+.feature-label {
+  background-color: #f4f4f4;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Kanban Column Header */
+.kanban-column-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.status-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.task-count {
+  font-size: 14px;
+  color: #6b7280;
+}
